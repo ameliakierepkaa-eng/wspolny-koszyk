@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Listę widzi i zmienia każdy, kto zna 8-znakowy kod grupy.
+    // Nie da się wylistować istniejących grup, więc kodu nie można podejrzeć.
+    match /groups/{code}/{document=**} {
+      allow read, write: if code.matches('^[A-Z0-9]{8}$');
+    }
+  }
+}
