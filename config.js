@@ -1,14 +1,10 @@
-// Tu wklej konfigurację swojego projektu Firebase (instrukcja w README.md, krok 1).
-// Dopóki jest tu null, aplikacja działa w trybie próbnym: lista jest tylko na jednym urządzeniu.
-window.FIREBASE_CONFIG = null;
-
-/* Przykład, jak ma to wyglądać po wklejeniu:
+// Konfiguracja projektu Firebase "wspolny-koszyk" (baza, ktora laczy telefony).
+// To publiczny identyfikator aplikacji, a nie haslo: dostepu do danych pilnuja reguly w firestore.rules.
 window.FIREBASE_CONFIG = {
-  apiKey: "...",
-  authDomain: "twoj-projekt.firebaseapp.com",
-  projectId: "twoj-projekt",
-  storageBucket: "twoj-projekt.appspot.com",
-  messagingSenderId: "...",
-  appId: "..."
+  apiKey: "AIzaSyDS8sb7MCzAaNf2yosTXfTfd6NqYNC2scQ",
+  authDomain: "wspolny-koszyk.firebaseapp.com",
+  projectId: "wspolny-koszyk",
+  storageBucket: "wspolny-koszyk.firebasestorage.app",
+  messagingSenderId: "350949021330",
+  appId: "1:350949021330:web:b49a40ea5911051e01f84b"
 };
-*/
